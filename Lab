@@ -3,3 +3,127 @@ https://cloud.skytap.com/vms/d67195397c7fe3754c7c6beff726def6/desktops
 https://cloud.skytap.com/vms/0f690f3ac00220b44f71d9fe7e0e0380/desktops
 Lab 3
 https://cloud.skytap.com/vms/db710d36ec68f80f10afde4f137fa69b/desktops
+
+
+
+
+
+Password View Request for target account
+@TargetAccount.getUserName@
+
+ 
+
+Do not reply to this email.&lt;br&gt;&lt;br&gt;
+A password view request with SSO Type '@PasswordViewRequest.getSsoType@' has
+been submitted by user @User.getUserID@ to view the password for account
+@TargetAccount.getUserName@ of application @TargetApplication.getName@ on
+server @TargetServer.getHostName@ with device name
+@TargetServer.getDeviceName@. The password view request reason is
+@PasswordViewRequest.getReason@
+(@PasswordViewRequest.getReasonDescription@).  Please login to Xceedium
+Password Management system and manage this request.
+
+ 
+
+ 
+
+Password View Request Status for account
+@TargetAccount.getUserName@ 
+
+Status:
+
+Do not reply to this
+email.&lt;br&gt;&lt;br&gt; The status of your request to view
+password with SSO Type '@PasswordViewRequest.getSsoType@' for the account
+@TargetAccount.getUserName@ of application @TargetApplication.getName@ in
+server @TargetServer.getHostName@ with device name @TargetServer.getDeviceName@
+is: @PasswordViewRequest.getStatusString@ &lt;br&gt; Approved By:
+@User.getUserID@ (@User.getFirstName@ @User.getLastName@) &lt;br&gt;
+Reason: @PasswordViewRequest.getApprovalReason@ &lt;br&gt; Reason
+Description: @PasswordViewRequest.getApprovalReasonDescription@
+&lt;br&gt; 
+
+ 
+
+Sub:
+
+Password of account @TargetAccount.getUserName@ has been
+accessed by @User.getUserID@.
+
+ 
+
+ 
+
+Do not reply to this
+email.&lt;br&gt;&lt;br&gt; The Password for the account
+@TargetAccount.getUserName@ of application @TargetApplication.getName@ on
+server @TargetServer.getHostName@ with device name @TargetServer.getDeviceName@
+has been accessed by user @User.getUserID@ with SSO Type
+'@PasswordViewRequest.getSsoType@'. 
+
+ 
+
+ 
+
+Password View Request for account
+@TargetAccount.getUserName@ requested by
+
+ 
+
+Expired
+
+Do not reply to this
+email.&lt;br&gt;&lt;br&gt; The Password View Request with SSO
+Type '@PasswordViewRequest.getSsoType@' for the account
+@TargetAccount.getUserName@ of application @TargetApplication.getName@ on
+server @TargetServer.getHostName@ with device name @TargetServer.getDeviceName@
+requested by user @User.getUserID@ has expired. 
+
+ 
+
+Approval Sub:
+
+Password View Request for target account
+@TargetAccount.getUserName@
+
+ 
+
+Approval Body
+
+Do not reply to this
+email.&lt;br&gt;&lt;br&gt; A password view request has been
+submitted with the following details: &lt;br&gt;Requestor :
+@User.getUserID@&lt;br&gt; Requested Account: @TargetAccount.getUserName@&lt;br&gt;
+Requested Account Target Application Name: @TargetApplication.getName@
+&lt;br&gt; Requested Account Target Server:
+@TargetServer.getHostName@&lt;br&gt; Requested Account Target Device
+Name: @TargetServer.getDeviceName@&lt;br&gt; SSO Type:
+@PasswordViewRequest.getSsoType@&lt;br&gt; Request Reason:
+@PasswordViewRequest.getReason@
+(@PasswordViewRequest.getReasonDescription@)&lt;br&gt;Start Date:
+@PasswordViewRequest.getStartDate@&lt;br&gt;End Date:
+@PasswordViewRequest.getEndDate@&lt;br&gt;&lt;br&gt;&lt;a
+href="@PasswordViewRequestIdentifier.getApprovalUrl@"&gt;Click
+here to Approve this
+Request&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;a
+href="@PasswordViewRequestIdentifier.getDenialUrl@"&gt;Click here
+to Deny this Request&lt;/a&gt;
+
+ 
+
+Rep. Sub
+
+Report results for @reportName@
+
+ 
+
+Report Result body:
+
+Do not reply to this email. The @reportName@ report has been
+run.  The attached results encompass the period from @reportStartDate@ to
+@reportEndDate@.
+
+ 
+
+ 
+
