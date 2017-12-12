@@ -1,0 +1,13 @@
+# intall_Rds_on_Win2
+import-module remotedesktop
+New-RDSessionDeployment –ConnectionBroker win2.voonair.local –WebAccessServer win2.voonair.local –SessionHost win2.voonair.local
+New-RDSessionCollection –CollectionName SessionCollection –SessionHost win2.voonair.local –CollectionDescription “This Collection is for Desktop Sessions” –ConnectionBroker win2.voonair.local
+Start-Sleep -Second 10
+New-RDRemoteapp -Alias SQL2K12Express -DisplayName SQL2K12Express -FilePath "C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\Ssms.exe" -ShowInWebAccess 1 -CollectionName "SessionCollection" -ConnectionBroker win2.voonair.local -CommandLineSetting Allow
+New-RDRemoteapp -Alias CMD -DisplayName CMD -FilePath "C:\Windows\System32\cmd.exe" -ShowInWebAccess 1 -CollectionName "SessionCollection" -ConnectionBroker win2.voonair.local -CommandLineSetting Allow
+
+######
+
+@ECHO OFF
+PowerShell.exe -executionpolicy unrestricted Invoke-Command -Computername adserver.voonair.local -FilePath C:\ClassFiles\RDS\Install_RDS_On_Win2.ps1
+PAUSE
