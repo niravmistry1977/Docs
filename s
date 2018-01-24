@@ -1,3 +1,5 @@
+https://info.ssh.com/tectia-server-trial-downloads?submissionGuid=6cc0704c-1aa0-4f8d-a582-7402db351c1d
+
 List<int[]> pairs =
 numbers1.stream()
 .flatMap(i -> numbers2.stream()
